@@ -72,7 +72,7 @@ Eg :
 
 - name: Install and Start Nginx
   hosts: all
-  become: root
+  become: yes
 
   tasks:
 
@@ -80,6 +80,7 @@ Eg :
     apt:
     name: nginx
     state: present (present means to install)
+    <!-- shell: apt install nginx It is equivalent to above command -->
 
   - name: Start nginx
     service:
@@ -88,7 +89,18 @@ Eg :
 
     ![Alt text](image-1.png)
 
-    <!-- shell: apt install nginx It is equivalent to above command -->
+    Change become root to yes
+
     <!-- Proper Indentation should be there, Indent is not working due to prettier extention -->
 
     We can write single or multiple playbooks in a file.
+
+  How to run ansible playbook?
+
+  ansible-playbook cmd is used to run ansible playbooks
+
+  command: ansible-playbook -i inventory-file name_of_the_playbook.yaml
+
+  After executing this command. Check on the target servers that nginx is running or not.
+
+  to check : sudo systemctl nginx status
