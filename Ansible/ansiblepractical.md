@@ -1,14 +1,14 @@
-Ansible Playbooks
+## Ansible Playbooks
 
 With Ansible playbooks, you can define a series of steps, called tasks, that should be performed on target machines. These tasks can range from installing software, configuring settings, managing files, and even running complex operations.
 
-Ansible Adhoc Commands
+## Ansible Adhoc Commands
 
 In simple words, Ansible ad-hoc commands are quick, one-line instructions that you can use to perform simple tasks on remote computers or devices without writing a complete playbook. With Ansible ad-hoc commands, you can execute common tasks such as checking system information, installing packages, restarting services, or copying files, among others. They are especially useful for performing quick actions on multiple machines simultaneously, without the need for more complex configuration or organization.
 
 ---
 
-To run Ansible Adhoc commands
+> To run Ansible Adhoc commands
 
 use this command:
 
@@ -50,7 +50,7 @@ For performing these simple task on a target server we use ansible adhoc command
 
 ---
 
-How to write ansible playbooks??
+> How to write ansible playbooks??
 
 Lets understand by a scenario Suppose we want to install nginx, start nginx.
 
@@ -91,4 +91,4 @@ Eg :
     <!-- shell: apt install nginx It is equivalent to above command -->
     <!-- Proper Indentation should be there, Indent is not working due to prettier extention -->
 
-    We can write single or multiple playbooks in a file
+    We can write single or multiple playbooks in a file.
