@@ -135,5 +135,3 @@ cmd : ansible-galaxy role init kubernetes
 this cmd will create a role and will generate some files and configurations. Using these files and folders we can structure our ansible playbooks.
 
 reference : https://github.com/mdfarazsiddiqui/ansible-examples/
-
-Owner: Abhishek Veeramalla
