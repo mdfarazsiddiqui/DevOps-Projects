@@ -104,3 +104,36 @@ Eg :
   After executing this command. Check on the target servers that nginx is running or not.
 
   to check : sudo systemctl nginx status
+
+  ***
+
+  verbose = to enable verbose mode use -v flag in the command
+  to increase verbosity = add -vvv flag in the command
+
+---
+
+Example 2 ansible playbook
+
+Scenario
+
+- Create 3 EC2 instances on AWS (Terraform is mostly used to create EC2 instances but we can use ansible as well)
+- Configure 1 of those EC2 instances as master (ansible is used to configure)
+- Configure 2 other EC2 instances as worker (ansible is used to configure)
+
+Ansible Roles
+
+In simple words, Ansible roles are like pre-packaged sets of tasks and configurations that you can reuse and share to simplify the management of your servers and infrastructure.
+
+Think of them as ready-made sets of instructions that help you accomplish specific tasks or set up particular components of your system. Rather than writing everything from scratch every time you need to perform a certain action, you can create or use existing roles to automate the process.
+
+Roles in Ansible allow you to organize and structure your playbooks (the files containing your automation instructions) in a more modular and reusable way.
+
+Ansible roles is a simple and efficient way of writing ansible playbooks that will improve your efficiency to write complex playbooks.
+
+cmd : ansible-galaxy role init kubernetes
+
+this cmd will create a role and will generate some files and configurations. Using these files and folders we can structure our ansible playbooks.
+
+reference : https://github.com/mdfarazsiddiqui/ansible-examples/
+
+Owner: Abhishek Veeramalla
